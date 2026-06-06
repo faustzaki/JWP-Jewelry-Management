@@ -1,0 +1,32 @@
+{
+    "files": {
+        "resources/js/utils.js": [
+            "dark-theme",
+            "modal"
+        ],
+        "resources/js/components/select.js": [
+            "select"
+        ],
+        "resources/js/globals/modals.js": [
+            "modal"
+        ]
+    },
+    "helpers": {
+        "popup": [
+            "select"
+        ]
+    },
+    "internalDependencies": {
+        "icon": [
+            "input",
+            "select",
+            "badge"
+        ],
+        "text": [
+            "select"
+        ],
+        "button": [
+            "badge"
+        ]
+    }
+}
