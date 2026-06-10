@@ -49,7 +49,7 @@
     <!-- Header Page -->
     <div class="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4">
         <div>
-            <h1 class="text-2xl font-heading">Stok Persediaan Perhiasan</h1>
+            <h1 class="text-2xl font-heading">Stok Persediaan Keperluan Barang Perusahaan Steel</h1>
             <p class="text-sm text-neutral-text-muted">Kelola persediaan fisik, catat barang masuk dan barang keluar secara real-time.</p>
         </div>
     </div>
@@ -62,3 +62,5 @@
 
 </div>
 @endsection
+
+

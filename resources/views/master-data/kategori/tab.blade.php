@@ -52,7 +52,7 @@
         <!-- Tabel Kategori (Sisi Kiri di Desktop) -->
         <div class="xl:col-span-2 border border-neutral-border bg-neutral-surface rounded-xl shadow-sm overflow-hidden flex flex-col">
             <div class="p-6 border-b border-neutral-border bg-neutral-bg/50 dark:bg-neutral-bg/50">
-                <h3 class="text-lg font-heading">Daftar Kategori Perhiasan</h3>
+                <h3 class="text-lg font-heading">Daftar Kategori Keperluan Barang Perusahaan Steel</h3>
             </div>
             <div class="overflow-x-auto">
                 <table class="w-full text-left border-collapse text-sm whitespace-nowrap">
@@ -107,4 +107,6 @@
             </div>
         </div>
     </div>
+
+
 

@@ -1,4 +1,4 @@
-    <!-- Tab Content 2: Daftar Perhiasan (Barang) -->
+    <!-- Tab Content 2: Daftar Keperluan Barang Perusahaan Steel (Barang) -->
     <div x-show="activeTab === 'barang'" class="grid grid-cols-1 xl:grid-cols-3 gap-6" style="display: none;">
         <!-- Form Tambah Produk (Sisi Kanan di Desktop) -->
         <div class="xl:col-span-1 border border-neutral-border bg-neutral-surface rounded-xl p-6 shadow-sm h-fit order-first xl:order-last">
@@ -81,7 +81,7 @@
             </form>
         </div>
 
-        <!-- Tabel Perhiasan (Sederhana: Hanya Kode, Nama, Kategori, Aksi) -->
+        <!-- Tabel keperluan barang perusahaan steel (Sederhana: Hanya Kode, Nama, Kategori, Aksi) -->
         <div class="xl:col-span-2 border border-neutral-border bg-neutral-surface rounded-xl shadow-sm overflow-hidden flex flex-col">
             <div class="p-6 border-b border-neutral-border bg-neutral-bg/50 dark:bg-neutral-bg/50">
                 <h3 class="text-lg font-heading">Daftar Inventaris Produk</h3>
@@ -137,4 +137,6 @@
             </div>
         </div>
     </div>
+
+
 

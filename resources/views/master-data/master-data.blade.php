@@ -133,7 +133,7 @@
     <!-- Header Page -->
     <div>
         <h1 class="text-2xl font-heading">Manajemen Master Data</h1>
-        <p class="text-sm text-neutral-text-muted">Kelola master kategori perhiasan dan katalog produk terdaftar di Toko JeWePe.</p>
+        <p class="text-sm text-neutral-text-muted">Kelola master Kategori Keperluan Barang Perusahaan Steel dan katalog produk terdaftar di Toko JeWePe.</p>
     </div>
 
     
@@ -172,7 +172,7 @@
             :class="activeTab === 'barang' ? 'border-primary text-neutral-text font-semibold' : 'border-transparent text-neutral-text-muted hover:text-neutral-text'"
             class="pb-3 border-b-2 text-sm font-medium transition-all cursor-pointer"
         >
-            Daftar Perhiasan (Barang)
+            Daftar Keperluan Barang Perusahaan Steel (Barang)
         </button>
         <button 
             @click="activeTab = 'pengguna'"
@@ -186,7 +186,7 @@
     <!-- Tab Content 1: Kategori Barang -->
     @include('master-data.kategori.tab')
 
-    <!-- Tab Content 2: Daftar Perhiasan (Barang) -->
+    <!-- Tab Content 2: Daftar Keperluan Barang Perusahaan Steel (Barang) -->
     @include('master-data.barang.tab')
 
     <!-- Tab Content 3: Pengguna (Admin) -->
@@ -195,7 +195,7 @@
     <!-- Modal Detail Kategori -->
     @include('master-data.kategori.modal')
 
-    <!-- Modal Detail Produk Perhiasan -->
+    <!-- Modal Detail Produk keperluan barang perusahaan steel -->
     @include('master-data.barang.modal')
 
     <!-- Modal Detail Pengguna Admin -->
@@ -203,4 +203,6 @@
 
 </div>
 @endsection
+
+
 

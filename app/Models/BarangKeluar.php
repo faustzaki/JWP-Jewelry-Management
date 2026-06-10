@@ -12,9 +12,10 @@ class BarangKeluar extends Model
         'tanggal_keluar' => 'date',
     ];
 
-    // Relasi balik untuk menghitung mutasi pengurangan stok perhiasan
+    // Relasi balik untuk menghitung mutasi pengurangan stok keperluan barang perusahaan steel
     public function barang()
     {
         return $this->belongsTo(Barang::class);
     }
 }
+

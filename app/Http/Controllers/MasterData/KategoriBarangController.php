@@ -49,10 +49,11 @@ class KategoriBarangController extends Controller
 
         // Proteksi integritas data referensial agar tidak terjadi error foreign key constraint
         if ($kategori->barangs()->count() > 0) {
-            return back()->with('tab', request('tab', 'kategori'))->with('error', 'Tidak dapat menghapus kategori yang masih memiliki produk perhiasan!');
+            return back()->with('tab', request('tab', 'kategori'))->with('error', 'Tidak dapat menghapus kategori yang masih memiliki produk keperluan barang perusahaan steel!');
         }
 
         $kategori->delete();
         return back()->with('tab', request('tab', 'kategori'))->with('success', 'Kategori berhasil dihapus!');
     }
 }
+

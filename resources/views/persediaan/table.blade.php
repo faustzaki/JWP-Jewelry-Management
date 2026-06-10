@@ -5,7 +5,7 @@
                 <thead>
                     <tr class="border-b border-neutral-border bg-neutral-bg/50 dark:bg-neutral-bg/50">
                         <th class="py-3.5 px-6 text-neutral-text-muted font-heading">Kode</th>
-                        <th class="py-3.5 px-6 text-neutral-text-muted font-heading">Nama Perhiasan</th>
+                        <th class="py-3.5 px-6 text-neutral-text-muted font-heading">Nama Keperluan Barang Perusahaan Steel</th>
                         <th class="py-3.5 px-6 text-neutral-text-muted font-heading">Kategori</th>
                         <th class="py-3.5 px-6 text-neutral-text-muted font-heading text-right">Stok</th>
                         <th class="py-3.5 px-6 text-neutral-text-muted font-heading">Satuan</th>
@@ -20,7 +20,7 @@
                             <td class="py-3.5 px-6 font-mono text-neutral-text-muted" x-text="item.kode"></td>
                             <td class="py-3.5 px-6 font-medium" x-text="item.nama"></td>
                             <td class="py-3.5 px-6 text-neutral-text-muted" x-text="item.kategori"></td>
-                            <td class="py-3.5 px-6 text-right font-semibold" :class="item.stok < 10 ? 'text-error' : ''" x-text="item.stok"></td>
+                            <td class="py-3.5 px-6 text-right font-semibold" :class="item.stok <= 0 ? 'text-error' : (item.stok <= 5 ? 'text-warning' : '')" x-text="item.stok"></td>
                             <td class="py-3.5 px-6 text-neutral-text-muted" x-text="item.satuan"></td>
                             <td class="py-3.5 px-6">
                                 <template x-if="item.mutasi">
@@ -37,13 +37,19 @@
                             </td>
                             <td class="py-3.5 px-6 text-center">
                                 <span 
-                                    x-show="item.stok > 0"
+                                    x-show="item.stok > 5"
                                     class="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-success/10 border border-success/30 text-success"
                                 >
                                     Tersedia
                                 </span>
                                 <span 
-                                    x-show="item.stok === 0"
+                                    x-show="item.stok > 0 && item.stok <= 5"
+                                    class="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-warning/10 border border-warning/30 text-warning"
+                                >
+                                    Warning
+                                </span>
+                                <span 
+                                    x-show="item.stok <= 0"
                                     class="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-error/10 border border-error/30 text-error"
                                 >
                                     Tidak Tersedia
@@ -74,3 +80,5 @@
             </table>
         </div>
     </div>
+
+

@@ -11,7 +11,7 @@
                     <x-heroicon-o-sparkles class="w-6 h-6 text-neutral-text" />
                 </div>
                 <div>
-                    <p class="text-sm text-neutral-text-muted">Jenis Perhiasan</p>
+                    <p class="text-sm text-neutral-text-muted">Jenis Keperluan Barang Perusahaan Steel</p>
                     <p class="text-2xl font-heading">{{ number_format($jenisPerhiasan, 0, ',', '.') }}</p>
                 </div>
             </div>
@@ -171,3 +171,5 @@
     </div>
 </div>
 @endsection
+
+

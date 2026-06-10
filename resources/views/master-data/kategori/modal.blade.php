@@ -60,7 +60,7 @@
                 <div x-show="!selectedCategory.barangs || selectedCategory.barangs.length === 0" class="py-12 text-center text-neutral-text-muted space-y-2">
                     <x-heroicon-o-cube class="w-12 h-12 mx-auto opacity-40" stroke-width="1" />
                     <p class="text-sm font-medium">Belum Ada Produk</p>
-                    <p class="text-xs">Tidak ada perhiasan yang terdaftar di dalam kategori ini.</p>
+                    <p class="text-xs">Tidak ada keperluan barang perusahaan steel yang terdaftar di dalam kategori ini.</p>
                 </div>
             </div>
 
@@ -71,4 +71,5 @@
             </div>
         </div>
     </div>
+
 

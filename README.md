@@ -1,6 +1,6 @@
-# 📋 Aplikasi Manajemen Persediaan Barang — Toko Berlian & Perhiasan JeWePe
+# 📋 Aplikasi Manajemen Persediaan Barang — Toko JeWePe
 
-Aplikasi berbasis web (*back-office system*) yang dirancang khusus untuk mengelola, mencatat, dan memantau persediaan (stok) barang di **Toko Berlian & Perhiasan JeWePe**. Mengingat komoditas perhiasan mewah memiliki valuasi yang tinggi, sistem ini menjamin akurasi sirkulasi barang secara *real-time* untuk menggantikan pencatatan manual guna meminimalkan risiko kehilangan aset dan kesalahan perhitungan stok.
+Aplikasi berbasis web (*back-office system*) yang dirancang khusus untuk mengelola, mencatat, dan memantau persediaan (stok) barang di **Toko JeWePe**. Mengingat komoditas perhiasan mewah memiliki valuasi yang tinggi, sistem ini menjamin akurasi sirkulasi barang secara *real-time* untuk menggantikan pencatatan manual guna meminimalkan risiko kehilangan aset dan kesalahan perhitungan stok.
 
 ---
 
@@ -100,3 +100,4 @@ Buka browser Anda dan akses di: **[http://127.0.0.1:8000](http://127.0.0.1:8000)
 - `database/migrations/` — Definisi skema tabel basis data.
 - `database/seeders/` — Pengisi data awal & data uji coba (seeders).
 - `resources/views/` — Tampilan berbasis Blade & Tailwind CSS.
+

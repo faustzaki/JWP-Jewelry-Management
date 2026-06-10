@@ -7,7 +7,7 @@
     
     <div class="text-center mb-8">
         <h1 class="text-3xl font-heading mb-2">JeWePe</h1>
-        <p class="text-sm text-neutral-text-muted">Manajemen Persediaan Perhiasan</p>
+        <p class="text-sm text-neutral-text-muted">Manajemen Persediaan Keperluan Barang Perusahaan Steel</p>
     </div>
 
     {{-- Nonaktifkan pengisian otomatis browser demi keamanan keamanan kredensial pengguna --}}
@@ -75,3 +75,5 @@
     </div>
 </div>
 @endsection
+
+

@@ -74,7 +74,7 @@
     <div class="flex flex-col md:flex-row md:items-center justify-between gap-4 print:border-b print:pb-4 print:mb-4">
         <div>
             <h1 class="text-2xl font-heading print:text-xl print:font-bold">Laporan Persediaan Barang</h1>
-            <p class="text-sm text-neutral-text-muted print:text-xs">Rekapitulasi sirkulasi stok masuk, keluar, dan sisa persediaan fisik perhiasan.</p>
+            <p class="text-sm text-neutral-text-muted print:text-xs">Rekapitulasi sirkulasi stok masuk, keluar, dan sisa persediaan fisik keperluan barang perusahaan steel.</p>
         </div>
         <div class="flex items-center gap-2 print:hidden">
             <button 
@@ -105,3 +105,4 @@
 
 </div>
 @endsection
+

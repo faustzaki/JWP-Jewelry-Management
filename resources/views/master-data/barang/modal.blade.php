@@ -1,4 +1,4 @@
-    <!-- Modal Detail Produk Perhiasan -->
+    <!-- Modal Detail Produk keperluan barang perusahaan steel -->
     <div 
         x-show="showProductDetailModal" 
         class="fixed inset-0 z-50 flex items-center justify-center p-4"
@@ -61,4 +61,5 @@
             </div>
         </div>
     </div>
+
 

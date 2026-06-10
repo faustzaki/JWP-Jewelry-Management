@@ -46,10 +46,10 @@
  
  <!-- Form Group: Barang -->
  <div class="space-y-1.5">
- <label class="text-sm font-medium text-neutral-text-muted">Pilih Perhiasan</label>
+ <label class="text-sm font-medium text-neutral-text-muted">Pilih Keperluan Barang Perusahaan Steel</label>
  <div class="relative">
   <select name="barang_id" required class="w-full border border-neutral-border bg-transparent rounded-lg pl-3 pr-10 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-black dark:focus:ring-white transition-shadow appearance-none">
-  <option value="" class="bg-white text-black dark:bg-neutral-surface dark:text-white">-- Pilih Perhiasan --</option>
+  <option value="" class="bg-white text-black dark:bg-neutral-surface dark:text-white">-- Pilih Keperluan Barang Perusahaan Steel --</option>
   @foreach($barangs as $barang)
     <option value="{{ $barang->id }}" class="bg-white text-black dark:bg-neutral-surface dark:text-white" {{ request('barang_id') == $barang->id ? 'selected' : '' }}>{{ $barang->nama_barang }} ({{ $barang->kode_barang }})</option>
   @endforeach
@@ -92,7 +92,7 @@
  <thead>
  <tr class="border-b border-neutral-border bg-neutral-bg/50 dark:bg-neutral-bg/50">
  <th class="py-3 px-6 text-neutral-text-muted font-heading">Tanggal</th>
- <th class="py-3 px-6 text-neutral-text-muted font-heading">Nama Perhiasan</th>
+ <th class="py-3 px-6 text-neutral-text-muted font-heading">Nama Keperluan Barang Perusahaan Steel</th>
  <th class="py-3 px-6 text-neutral-text-muted font-heading text-right">Jumlah</th>
  <th class="py-3 px-6 text-neutral-text-muted font-heading">Keterangan</th>
  </tr>
@@ -119,3 +119,5 @@
  </div>
 </div>
 @endsection
+
+
