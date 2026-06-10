@@ -4,6 +4,13 @@ namespace App\Models;
 
 use Illuminate\Database\Eloquent\Model;
 
+/**
+ * Model Barang
+ * 
+ * Model ini merepresentasikan entitas barang atau material (seperti Pipa, Plat Baja, dll).
+ * Model ini bertanggung jawab untuk menyimpan data master barang termasuk stok yang tersedia saat ini.
+ * Hubungan antar model (Relasi Eloquent) diatur di bawah.
+ */
 class Barang extends Model
 {
     protected $fillable = [

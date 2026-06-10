@@ -8,8 +8,18 @@ use App\Models\Barang;
 use Illuminate\Http\Request;
 use Illuminate\Validation\Rule;
 
+/**
+ * Controller DaftarPerhiasanController (digunakan sebagai Master Barang Steel)
+ * 
+ * Controller ini bertugas mengelola siklus logika Master Data Barang (Create, Update, Delete).
+ * Memvalidasi input dari user dan menyimpannya ke database via Model Barang.
+ */
 class DaftarPerhiasanController extends Controller
 {
+    /**
+     * Menyimpan data barang baru ke dalam database.
+     * Menerima Request dari form, memvalidasi aturan, dan melakukan mass assignment.
+     */
     public function store(Request $request)
     {
         $request->validate([
@@ -35,6 +45,10 @@ class DaftarPerhiasanController extends Controller
         return back()->with('tab', request('tab', 'barang'))->with('success', 'Produk barang baru berhasil didaftarkan!');
     }
 
+    /**
+     * Memperbarui data barang yang sudah ada.
+     * Menemukan barang berdasarkan ID, memvalidasi input, dan meng-update record di tabel.
+     */
     public function update(Request $request, $id)
     {
         $barang = Barang::findOrFail($id);
@@ -58,6 +72,9 @@ class DaftarPerhiasanController extends Controller
         return back()->with('tab', request('tab', 'barang'))->with('success', 'Data produk barang berhasil diperbarui!');
     }
 
+    /**
+     * Menghapus data barang dari database.
+     */
     public function destroy($id)
     {
         $barang = Barang::findOrFail($id);
